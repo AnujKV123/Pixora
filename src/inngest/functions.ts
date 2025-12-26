@@ -216,8 +216,8 @@ export const codeAgentFunction = inngest.createFunction(
       name: "fragment-title-generator",
       system: FRAGMENT_TITLE_PROMPT,
       description: "A fragment title generator",
-      model: gemini({
-        model: "gemini-2.0-flash",
+      model: openai({
+        model: "gpt-4.1",
       }),
     });
 
@@ -225,8 +225,8 @@ export const codeAgentFunction = inngest.createFunction(
       name: "response-generator",
       system: RESPONSE_PROMPT,
       description: "A response generator",
-      model: gemini({
-        model: "gemini-2.0-flash",
+      model: openai({
+        model: "gpt-4.1",
       }),
     });
 
